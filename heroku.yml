@@ -1,5 +1,5 @@
 build:
   docker:
-    web: ./app/Dockerfile
+    web: ./aboutMe/app/Dockerfile
 run:
   web: mvn package; mvn spring-boot:run
