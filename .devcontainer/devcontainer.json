@@ -1,0 +1,20 @@
+{
+  // 任意の名前
+  "name": "remote-java",
+  // DockerComposeFileを指定
+  "dockerComposeFile": "../aboutMe/docker-compose.yml",
+  // DockerComposeFileにあるservice名を指定
+  "service": "app",
+  // コンテナに入ったときの作業ディレクトリ
+  "workspaceFolder": "/app",
+  "settings": {
+      // bashでターミナルを起動
+      "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  // コンテナ内で使いたい拡張機能
+  "extensions": [
+	"vscjava.vscode-java-pack",
+	"Pivotal.vscode-boot-dev-pack",
+	"gabrielbb.vscode-lombok"
+  ]
+}
