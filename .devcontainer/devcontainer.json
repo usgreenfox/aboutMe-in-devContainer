@@ -2,7 +2,7 @@
   // 任意の名前
   "name": "remote-java",
   // DockerComposeFileを指定
-  "dockerComposeFile": "../aboutMe/docker-compose.yml",
+  "dockerComposeFile": "../docker-compose.yml",
   // DockerComposeFileにあるservice名を指定
   "service": "app",
   // コンテナに入ったときの作業ディレクトリ
