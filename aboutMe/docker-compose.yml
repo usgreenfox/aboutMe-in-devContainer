@@ -2,8 +2,8 @@ services:
   app:
     container_name: aboutme_app
     build:
-      context: .
-      dockerfile: Dockerfile
+      # context: .
+      dockerfile: ./app/Dockerfile
     # tty: true、もしくはフォアグラウンドで実行しているプロセスがあればコンテナが停止しない
     tty: true
     # source(ホストマシン)のディレクトリをtarget(コンテナ)にマウントする
