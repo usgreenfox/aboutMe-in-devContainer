@@ -1,15 +1,14 @@
 services:
   app:
-    container_name: aboutme_app
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./app/Dockerfile
     # tty: true、もしくはフォアグラウンドで実行しているプロセスがあればコンテナが停止しない
     tty: true
     # source(ホストマシン)のディレクトリをtarget(コンテナ)にマウントする
-    # volumes:
-    #   - type: bind
-    #     source: .
-    #     target: /app
+    volumes:
+      - type: bind
+        source: ./app
+        target: /app
     #コンテナ内のワーキングディレクトリ
-    # working_dir: /app
+    working_dir: /app
