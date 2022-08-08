@@ -1,0 +1,26 @@
+.bg-grren {
+  background-color: #1e3932;
+}
+
+* {
+  color: #848484;
+  font-family: SODO Sans,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  font-weight: 200;
+}
+
+.tab-ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.tab-ul li {
+  margin: 0;
+  border: #848484 1px solid;
+  padding: 8px;
+}
+
+.tab-ul li:hover {
+  background-color: #848484;
+  color: #1e3932;
+  cursor: pointer;
+}
