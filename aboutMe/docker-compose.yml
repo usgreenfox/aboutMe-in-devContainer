@@ -10,5 +10,10 @@ services:
       - type: bind
         source: ./app
         target: /app
+    ports:
+      - target: 8080
+        published: ${WEB_PORT:-8080}
+        protocol: tcp
+        mode: host
     #コンテナ内のワーキングディレクトリ
     working_dir: /app

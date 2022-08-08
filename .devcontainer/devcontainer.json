@@ -13,8 +13,10 @@
   },
   // コンテナ内で使いたい拡張機能
   "extensions": [
-	"vscjava.vscode-java-pack",
-	"Pivotal.vscode-boot-dev-pack",
-	"gabrielbb.vscode-lombok"
+    // Java関連の拡張機能パック
+    "vscjava.vscode-java-pack",
+    // Spring Boot関連の拡張機能パック
+    "pivotal.vscode-boot-dev-pack",
+    "gabrielbb.vscode-lombok"
   ]
 }
