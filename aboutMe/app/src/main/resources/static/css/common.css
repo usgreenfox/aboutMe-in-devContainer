@@ -2,10 +2,17 @@
   background-color: #1e3932;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+  padding: 8px;
+}
+
 * {
   color: #848484;
   font-family: SODO Sans,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
   font-weight: 200;
+  box-sizing: border-box;
 }
 
 .tab-ul {
@@ -23,4 +30,14 @@
   background-color: #848484;
   color: #1e3932;
   cursor: pointer;
+}
+
+.tab-area {
+  width: 100%;
+  border: #848484 5px solid;
+  display: none;
+}
+
+.tab-area:first-child {
+  display: block;
 }

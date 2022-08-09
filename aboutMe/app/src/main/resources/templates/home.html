@@ -12,12 +12,33 @@
   <header>about Taka Kita</header>
   <main>
     <ul class="tab-ul">
-      <li>profile</li>
-      <li>carrer</li>
-      <li>portfolio</li>
+      <li class="tab-list-item">profile</li>
+      <li class="tab-list-item">carrer</li>
+      <li class="tab-list-item">portfolio</li>
     </ul>
+    <div class="tab-area" style="display: block;">
+      <p>ここはprofileのエリアです</p>
+    </div>
+    <div class="tab-area">
+      <p>ここはcareerのエリアです</p>
+    </div>
+    <div class="tab-area">
+      <p>ここはportfolioのエリアです</p>
+    </div>
   </main>
   <footer></footer>
+
+  <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(function () {
+      // tab-list-itemクリックでtab-area切替
+      $('.tab-list-item').click(function () {
+        $('.tab-area').css({display: 'none'});
+        
+      });
+
+    });
+  </script>
 </body>
 
 </html>
