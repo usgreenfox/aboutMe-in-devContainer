@@ -5,7 +5,7 @@
 body {
   width: 100%;
   margin: 0;
-  padding: 8px;
+  padding: 24px;
 }
 
 * {
@@ -18,15 +18,17 @@ body {
 .tab-ul {
   display: flex;
   list-style-type: none;
+  padding: 0;
 }
 
-.tab-ul li {
+.tab-button {
   margin: 0;
   border: #848484 1px solid;
-  padding: 8px;
+  padding: 8px 24px;
 }
 
-.tab-ul li:hover {
+.tab-button:hover,
+.tab-button-active {
   background-color: #848484;
   color: #1e3932;
   cursor: pointer;
@@ -34,10 +36,12 @@ body {
 
 .tab-area {
   width: 100%;
-  border: #848484 5px solid;
+  height: calc(100vh - 104px);
+  border-top: #848484 15px solid;
+  border-bottom: #848484 15px solid;
   display: none;
 }
 
-.tab-area:first-child {
+.tab-area-active {
   display: block;
 }

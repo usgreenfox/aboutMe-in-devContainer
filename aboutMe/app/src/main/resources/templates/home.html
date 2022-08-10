@@ -12,11 +12,11 @@
   <header>about Taka Kita</header>
   <main>
     <ul class="tab-ul">
-      <li class="tab-list-item">profile</li>
-      <li class="tab-list-item">carrer</li>
-      <li class="tab-list-item">portfolio</li>
+      <li class="tab-button tab-button-active">profile</li>
+      <li class="tab-button">carrer</li>
+      <li class="tab-button">portfolio</li>
     </ul>
-    <div class="tab-area" style="display: block;">
+    <div class="tab-area tab-area-active">
       <p>ここはprofileのエリアです</p>
     </div>
     <div class="tab-area">
@@ -31,14 +31,20 @@
   <script src="webjars/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(function () {
-      // tab-list-itemクリックでtab-area切替
-      $('.tab-list-item').click(function () {
-        $('.tab-area').css({display: 'none'});
-        
+      // tab-buttonクリックでtab-area切替
+      $('.tab-button').click(function () {
+        // インデックス番号の取得
+        let index = $('.tab-button').index(this);
+        // 一度全要素から***-activeクラスを削除する
+        $('.tab-button').removeClass('tab-button-active');
+        $('.tab-area').removeClass('tab-area-active');
+        // クリックされたボタンと対応するエリアに***-activeクラスを付与する
+        $(this).addClass('tab-button-active');
+        $('.tab-area').eq(index).addClass('tab-area-active');
       });
-
     });
   </script>
+
 </body>
 
 </html>
