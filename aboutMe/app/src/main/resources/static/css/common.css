@@ -15,6 +15,22 @@ body {
   box-sizing: border-box;
 }
 
+header {
+  margin-bottom: 16px;
+}
+
+#MainVisual {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#PhotoArea {
+  width: 200px;
+  height: 250px;
+  background-color: #848484;
+}
+
 .tab-ul {
   display: flex;
   list-style-type: none;
